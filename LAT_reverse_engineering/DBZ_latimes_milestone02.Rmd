@@ -211,7 +211,7 @@ payout_trends_summary %>%
     pct_change_from_baseline = ((average_payout - first(average_payout))/first(average_payout)) * 100,
     difference_from_baseline = average_payout - first(average_payout)
   ) %>%
-  select(fiscal_year, average_payout, difference_from_baseline, pct_change)
+  select(fiscal_year, average_payout, difference_from_baseline, pct_change_from_baseline)
 ```
 **Zaka's Note**: The output agrees with the proposed statement above, if the period is taken from 2013 to 2017.
 
