@@ -197,7 +197,7 @@ payout_trends_summary %>%
                    first(number_of_cases_in_each_year)) * 100,
     difference_from_baseline = number_of_cases_in_each_year - first(number_of_cases_in_each_year)
   ) %>%
-  select(fiscal_year, number_of_cases_in_each_year, difference_from_baseline, pct_change)
+  select(fiscal_year, number_of_cases_in_each_year, difference_from_baseline, pct_change_from_baseline)
 #NOTE TO RW: trends difference from article suggest missing data cleaning step, search "DATA CLEANING INVESTIGATION" in this code for what I'd like your thoughts on
 #NOTE TO RW: Is the difference from baseline and pct change from baseline helpful? Or would you recommend changing it to year to year difference/pct change?
 ```
